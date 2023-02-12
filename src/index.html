@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕸 𝕺 𝕭</title>
+    <link rel="stylesheet" href="scss/main.scss">
+    <script defer type="module" src="ts/main.ts"></script>
+     <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/be79ef6413.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section id="item1">
+        <ul id="letters">
+            <li id="letter-m" class="fade-in-ani-m"><h1>M </h1></li>
+            <li id="letter-o" class="fade-in-ani-o"><h1>O </h1></li>
+            <li id="letter-b" class="fade-in-ani-b"><h1>B</h1></li>
+        </ul>
+        <img id="start-wave" class="fade-in-ani-start-wave" src="assets/colorful-wave.png" alt="Wave">
+   </section>
+
+   <section id="item2">
+        <div id="info">
+            <div id="twentythree">
+                <h2>23</h2>
+                <hr>
+                <div class="bio">
+                    <img src="assets/23.png" alt="23">
+                    <ul class="credentials">
+                        <li><p>Medverkande artist på låten M.O.B</p></li>
+                        <li><p>Spotify: <i class="fa-brands fa-spotify"></i></p></li>
+                        <li><p>Instagram: <i class="fa-brands fa-instagram"></i></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gambino">
+                <h2>C.GAMBINO</h2>
+                <hr>
+                <div class="bio">
+                    <img src="assets/gambino.png" alt="GAMBINO">
+                    <ul class="credentials">
+                        <li><p>Medverkande artist på låten M.O.B</p></li>
+                        <li><p>Spotify: <i class="fa-brands fa-spotify"></i></p></li>
+                        <li><p>Instagram: <i class="fa-brands fa-instagram"></i></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="oc">
+                <h2>Oscar Chase</h2>
+                <hr>
+                <div class="bio">
+                    <img src="assets/oc.png" alt="Oscar Chase">
+                    <ul class="credentials">
+                        <li><p>Producent av låten M.O.B</p></li>
+                        <li><p>Instagram: <i class="fa-brands fa-instagram"></i></p></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="chaos">
+                <h2>CHAOS</h2>
+                <hr>
+                <div class="bio">
+                    <img src="assets/chaos.png" alt="CHAOS">
+                    <ul class="credentials">
+                        <li><p>Redigerat av CHAOS STUDIOS</p></li>
+                        <li><p>Instagram: <i class="fa-brands fa-instagram"></i></p></li>
+                        <li><p>Website: <i class="fa-solid fa-globe"></i></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section id="item3">
+        <div id="watch">
+            <button id="play_button"><i class="fa-solid fa-play"></i></button>
+            <video id="video" controls="false">
+                <source src="assets/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <img src="assets/blob.png" alt="blob">
+        </div>
+   </section>
+
+   <script>
+    var playButton = document.getElementById("play_button");
+    playButton.addEventListener("click", function() {
+    video.volume = 0.2;
+    if (video.paused == true) {
+        video.play();
+
+        playButton.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+    } else {
+        video.pause();
+
+        playButton.innerHTML = `<i class="fa-solid fa-play"></i>`;
+    }
+    });
+   </script>
+</body>
+</html>
