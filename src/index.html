@@ -12,12 +12,12 @@
 </head>
 <body>
    <section id="item1">
+    <img id="start-wave" class="fade-in-ani-start-wave" src="assets/colorful-wave.png" alt="Wave">
         <ul id="letters">
             <li id="letter-m" class="fade-in-ani-m"><h1>M </h1></li>
             <li id="letter-o" class="fade-in-ani-o"><h1>O </h1></li>
             <li id="letter-b" class="fade-in-ani-b"><h1>B</h1></li>
         </ul>
-        <img id="start-wave" class="fade-in-ani-start-wave" src="assets/colorful-wave.png" alt="Wave">
    </section>
 
    <section id="item2">
@@ -74,29 +74,24 @@
 
    <section id="item3">
         <div id="watch">
+            <div id="words">
+                <h2 id="press" class="press-visible">TRYCK</h2>
+                <h2 id="on" class="on-visible">PÅ</h2>
+                <h2 id="play" class="play-visible">PLAY</h2>
+            </div>
             <button id="play_button"><i class="fa-solid fa-play"></i></button>
             <video id="video" controls="false">
                 <source src="assets/video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+                Your browser does not support the video tag.
+            </video>
             <img src="assets/blob.png" alt="blob">
         </div>
    </section>
 
-   <script>
-    var playButton = document.getElementById("play_button");
-    playButton.addEventListener("click", function() {
-    video.volume = 0.2;
-    if (video.paused == true) {
-        video.play();
-
-        playButton.innerHTML = `<i class="fa-solid fa-pause"></i>`;
-    } else {
-        video.pause();
-
-        playButton.innerHTML = `<i class="fa-solid fa-play"></i>`;
-    }
-    });
-   </script>
+   <section id="item4">
+    <footer>
+        <img src="assets/logo.png" alt="Logo">
+    </footer>
+   </section>
 </body>
 </html>
